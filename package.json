@@ -1,0 +1,25 @@
+{
+  "name": "suitcss-jacket",
+  "version": "1.0.0",
+  "description": "A theme for SUIT CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briandrum/suitcss-jacket.git"
+  },
+  "keywords": [
+    "browser",
+    "css-theme",
+    "style",
+    "suitcss"
+  ],
+  "author": "Brian Drum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briandrum/suitcss-jacket/issues"
+  },
+  "homepage": "https://github.com/briandrum/suitcss-jacket#readme"
+}
