@@ -2,24 +2,34 @@
   "name": "suitcss-jacket",
   "version": "1.0.0",
   "description": "A theme for SUIT CSS",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/briandrum/suitcss-jacket.git"
-  },
   "keywords": [
     "browser",
     "css-theme",
     "style",
     "suitcss"
   ],
-  "author": "Brian Drum",
+  "homepage": "https://github.com/briandrum/suitcss-jacket#readme",
+  "bugs": "https://github.com/briandrum/suitcss-jacket/labels/bug",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/briandrum/suitcss-jacket/issues"
+  "author": "Brian Drum",
+  "files": [
+    "index.css",
+    "lib"
+  ],
+  "style": "theme.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briandrum/suitcss-jacket.git"
   },
-  "homepage": "https://github.com/briandrum/suitcss-jacket#readme"
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "preprocess": "suitcss index.css build/build.css",
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "suitcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "suitcss-preprocessor": "^4.0.0"
+  }
 }

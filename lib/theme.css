@@ -1,0 +1,14 @@
+/**
+ * Theme definition
+ *
+ * This defines the theme in fundamental terms, but not how it is applied to
+ * the components. That is done in `theme-map.css`.
+ */
+
+/**
+ * Breakpoints
+ */
+
+@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
