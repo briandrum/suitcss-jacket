@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jacket for SUIT CSS</title>
+  <link href="../build/build.css" rel="stylesheet" />
+  <style>
+footer,
+header,
+nav,
+section {
+  /* border: thin WhiteSmoke solid; */
+  margin: 56px auto;
+  max-width: 960px;
+}
+
+.Example {
+  border: thin #f6f8fa solid;
+  border-radius: 4px;
+  margin: 24px 0;
+  overflow: hidden;
+  padding-top: 32px;
+  position: relative;
+}
+
+.Example::before {
+  color: Gray;
+  content: "Example";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+  left: 16px;
+}
+
+.Example-result {
+  padding: 16px;
+}
+
+.Example-source {
+  background-color: #f6f8fa;
+  border-top: thin #f6f8fa solid;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 16px;
+}
+  </style>
+</head>
+<body>
+  <header role="banner">
+    Jacket
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="#base">Base</a>
+      </li>
+      <li>
+        <a href="#components">Components</a>
+        <ul>
+          <li>
+            <a href="#components-button">Button</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#utilities">Utilities</a>
+        <ul>
+          <li>
+            <a href="#utilities-link">Link</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main id="content" role="main">
+    <section id="base">
+      <h1>Base</h1>
+<!--
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+ -->
+      <p>
+        Paragraph lorem ipsum <a href="#0">dolor</a> set amit…
+      </p>
+<!--
+      <ol>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+      </ol>
+      <ul>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+ -->
+    </section>
+    <section id="components">
+      <h1>Components</h1>
+      <h2 id="components-button">Button</h2>
+      <h3 id="components-button-default"><code>Button</code></h3>
+      <dl class="Example">
+        <dd class="Example-result">
+          <a class="Button" href="#0">Anchor</a>
+          <button class="Button" type="button">Button</button>
+          <button class="Button" type="submit">Submit</button>
+        </dd>
+        <dt class="Example-source">
+          <pre>&lt;a class="Button" href="#0"&gt;Anchor&lt;/a&gt;
+&lt;button class="Button" type="button"&gt;Button&lt;/button&gt;
+&lt;button class="Button" type="submit"&gt;Submit&lt;/button&gt;</pre>
+        </dt>
+      </dl>
+      <h3 id="components-button--primary"><code>Button--primary</code></h3>
+      <dl class="Example">
+        <dd class="Example-result">
+          <a class="Button Button--primary" href="#0">Anchor</a>
+          <button class="Button Button--primary" type="button">Button</button>
+          <button class="Button Button--primary" type="submit">Submit</button>
+        </dd>
+        <dt class="Example-source">
+          <pre>&lt;a class="Button Button--primary" href="#0"&gt;Anchor&lt;/a&gt;
+&lt;button class="Button Button--primary" type="button"&gt;Button&lt;/button&gt;
+&lt;button class="Button Button--primary" type="submit"&gt;Submit&lt;/button&gt;</pre>
+        </dt>
+      </dl>
+    </section>
+    <section id="utilities">
+      <h1>Utilities</h1>
+      <h2 id="utilities-link">Link</h2>
+      <h3 id="utilities-link-block"><code>u-linkBlock</code></h3>
+      <dl class="Example">
+        <dd class="Example-result">
+          <a class="u-linkBlock" href="#0">Link text</a>
+        </dd>
+        <dt class="Example-source">
+          <pre>&lt;a class="u-linkBlock" href="#0"&gt;Link text&lt;/a&gt;</pre>
+        </dt>
+      </dl>
+      <h3 id="utilities-link-clean"><code>u-linkClean</code></h3>
+      <dl class="Example">
+        <dd class="Example-result">
+          <a class="u-linkClean" href="#0">Link text</a>
+        </dd>
+        <dd class="Example-source">
+          <pre>&lt;a class="u-linkClean" href="#0"&gt;Link text&lt;/a&gt;</pre>
+        </dd>
+      </dl>
+      <h3 id="utilities-link-complex"><code>u-linkComplex</code> / <code>u-linkComplexTarget</code></h3>
+      <dl class="Example">
+        <dd class="Example-result">
+          <a class="u-linkComplex" href="#0">
+            Link complex
+            <span class="u-linkComplexTarget">target</span>
+          </a>
+        </dd>
+        <dt class="Example-source">
+          <pre>&lt;a class="u-linkComplex" href="#0"&gt;
+  Link complex
+  &lt;span class="u-linkComplexTarget"&gt;target&lt;/span&gt;
+&lt;/a&gt;</pre>
+        </dt>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    MIT
+  </footer>
+</body>
+</html>

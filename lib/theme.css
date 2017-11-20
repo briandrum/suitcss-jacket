@@ -2,7 +2,7 @@
  * Theme definition
  *
  * This defines the theme in fundamental terms, but not how it is applied to
- * the components. That is done in `theme-map.css`.
+ * the components. That is done in `tokens.css`.
  */
 
 /**
@@ -12,3 +12,42 @@
 @custom-media --sm-viewport (min-width:320px) and (max-width:640px);
 @custom-media --md-viewport (min-width:640px) and (max-width:960px);
 @custom-media --lg-viewport (min-width:960px);
+
+/**
+ * Borders
+ */
+
+:root {
+  --border-radius-small-px: 2px;
+}
+
+/**
+ * Colors
+ */
+
+:root {
+  --color-black: #000;
+  --color-brand-01: #0074d9;
+  --color-white: #fff;
+  --color-silver: #ddd;
+}
+
+/**
+ * Fonts
+ */
+
+:root {
+  --font-size: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+  --line-height: 1.4;
+}
+
+/**
+ * Spacing
+ */
+
+:root {
+  --space-small-px: 8px;
+  --space-medium-px: 16px;
+  --space-large-px: 32px;
+}

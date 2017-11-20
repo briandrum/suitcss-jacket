@@ -24,7 +24,9 @@
   "scripts": {
     "build": "npm run setup && npm run preprocess",
     "preprocess": "suitcss index.css build/build.css",
-    "setup": "npm install"
+    "setup": "npm install",
+    "test": "suitcss -c test/config.json index.css build/output.css && rm build/output.css",
+    "watch": "suitcss --watch index.css build/build.css"
   },
   "dependencies": {
     "suitcss": "^3.0.0"

@@ -1,0 +1,33 @@
+/**
+ * components-arrange
+ */
+
+:root {
+  --Arrange-gutter-size: var(--space-small-px);
+}
+
+/**
+ * components-button
+ */
+
+:root {
+  --Button-background: var(--color-silver);
+  --Button-border-width: 0;
+  --Button-border-color: transparent;
+  --Button-color: var(--color-black);
+  --Button-font: 14px var(--font-family);
+  --Button-padding: 0.5em 1em;
+  --Button-disabled-opacity: 0.4;
+  --Button-border-radius: var(--border-radius-small-px);
+
+  --Button-primary-background: var(--color-brand-01);
+  --Button-primary-color: var(--color-white);
+}
+
+/**
+ * components-grid
+ */
+
+:root {
+  --Grid-gutter-size: var(--space-large-px);
+}

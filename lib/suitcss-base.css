@@ -1,0 +1,25 @@
+@import "suitcss-base";
+
+html {
+  font-family: var(--font-family);
+}
+
+a {
+  transition: color 0.4s;
+}
+
+a:link {
+  color: var(--color-brand-01);
+}
+
+a:visited {
+  color: color(var(--color-brand-01) shade(20%));
+}
+
+a:hover {
+  color: color(var(--color-brand-01) tint(20%));
+}
+
+a:active {
+  color: color(var(--color-brand-01) shade(20%));
+}

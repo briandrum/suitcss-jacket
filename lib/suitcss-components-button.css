@@ -1,0 +1,47 @@
+@import "suitcss-components-button";
+
+/**
+ * Buttons
+ */
+
+.Button,
+.Button:link {
+  background-color: var(--Button-background);
+  border-radius: var(--Button-border-radius);
+  color: var(--Button-color);
+  transition: background-color 0.4s;
+}
+
+.Button:hover {
+  background-color: color(var(--Button-background) tint(20%));
+}
+
+.Button:focus {
+  background-color: Green;
+}
+
+.Button:active {
+  background-color: color(var(--Button-background) shade(20%));
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+.Button--primary,
+.Button--primary:link {
+  background-color: var(--Button-primary-background);
+  color: var(--Button-primary-color);
+}
+
+.Button--primary:hover {
+  background-color: color(var(--Button-primary-background) tint(20%));
+}
+
+.Button--primary:focus {
+  background-color: Green;
+}
+
+.Button--primary:active {
+  background-color: color(var(--Button-primary-background) shade(20%));
+}
